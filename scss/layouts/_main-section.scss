@@ -559,20 +559,26 @@
             align-self: flex-end;
         }
     }
-    &__link {
+
+    &__action {
         margin-top: 13px;
-        display: inline-flex;
+        display: flex;
         align-items: center;
-        column-gap: 28px;
+        column-gap: 22px;
+        &:hover {
+            cursor: pointer;
+            .project__link {
+                text-decoration: underline;
+            }
+        }
+    }
+
+    &__link {
         color: #fff;
         font-family: var.$public-san-font;
         font-size: 1.8rem;
         font-weight: 500;
         line-height: 1.56;
-
-        &:hover {
-            text-decoration: underline;
-        }
     }
 
     &__heading {
@@ -626,13 +632,14 @@
     &-decor-1,
     &-decor-2 {
         position: absolute;
+        user-select: none;
     }
 
     &-decor-1 {
         rotate: -88deg;
         transform: rotateX(180deg);
         top: 23px;
-        right: -69px;
+        right: -88px;
     }
 
     &-decor-2 {
@@ -652,7 +659,7 @@
     }
 
     &__desc {
-        margin-top: 20px;
+        margin-top: 36px;
     }
 
     &-list {

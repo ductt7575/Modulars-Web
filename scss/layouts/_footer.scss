@@ -59,9 +59,10 @@
             background: transparent;
             border-radius: 50%;
             border: 1px solid #265252;
+            transition: 0.25s ease-in-out;
 
             &:hover {
-                border: none;
+                border-color: #a75325;
                 background-color: #a75325;
                 cursor: pointer;
             }
