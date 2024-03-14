@@ -1,0 +1,33 @@
+*,
+::before,
+::after {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    scroll-behavior: smooth;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+a,
+button,
+select,
+input,
+textarea {
+    font-size: inherit;
+    font-family: inherit;
+    outline: none;
+    border: none;
+    color: inherit;
+    background: transparent;
+    cursor: pointer;
+}

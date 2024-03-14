@@ -1,0 +1,109 @@
+@use '../base/variables' as var;
+.footer {
+    padding: 72px 0px 50px;
+    background: var.$black-green;
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+    }
+    .subscribe-form {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 354px;
+        border-bottom: 1px solid var.$gray;
+        &__label {
+            color: #fff;
+            font-size: 3.2rem;
+            font-weight: 500;
+            line-height: normal;
+            display: block;
+        }
+
+        &__input {
+            width: 100%;
+            margin-top: 5px;
+            padding: 20px 0px 36px;
+            border: none;
+            outline: none;
+            color: #6a8383;
+            cursor: auto;
+            &::placeholder {
+                color: var.$gray;
+                font-size: 2.2rem;
+                font-weight: 600;
+                line-height: 1;
+            }
+        }
+
+        &__submit {
+            padding: 20px 0px 20px 20px;
+            color: #c4c4c4;
+        }
+    }
+
+    .social {
+        &-group {
+            margin-top: 48px;
+            display: flex;
+            align-items: center;
+            column-gap: 22px;
+        }
+
+        &-item {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 52px;
+            height: 52px;
+            background: transparent;
+            border-radius: 50%;
+            border: 1px solid #265252;
+
+            &:hover {
+                border: none;
+                background-color: #a75325;
+                cursor: pointer;
+            }
+        }
+    }
+
+    &__right {
+        margin-top: 22px;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        column-gap: 50px;
+    }
+
+    &-column {
+        &__label {
+            color: #fff;
+            font-family: var.$public-san-font;
+            font-size: 1.8rem;
+            font-weight: 500;
+            line-height: 1.56;
+        }
+    }
+
+    &__list {
+        margin-top: 6px;
+    }
+
+    &__link {
+        color: var.$gray;
+        font-family: var.$public-san-font;
+        font-weight: 500;
+        line-height: 2.25;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+    &__separate {
+        margin-top: 45px;
+        width: 100%;
+        height: 1px;
+        background: linear-gradient(90deg, #143c3c 2.28%, #295a5a 55.65%, rgba(38, 82, 82, 0) 102.06%);
+    }
+}
